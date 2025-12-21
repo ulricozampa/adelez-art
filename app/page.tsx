@@ -116,18 +116,13 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>About the Artist</h2>
         <div className={styles.aboutContent}>
           <p>
-            Welcome to my artistic journey. Through my work, I explore the intersection 
-            of color, emotion, and form, creating pieces that invite viewers to pause 
-            and reflect.
+            text
           </p>
           <p>
-            Each painting is a story, a moment captured in time, where technique meets 
-            passion. My work draws inspiration from nature, human connection, and the 
-            subtle beauty found in everyday moments.
+            text
           </p>
           <p>
-            Thank you for visiting my gallery. I hope my art resonates with you and 
-            brings a moment of joy and contemplation to your day.
+            
           </p>
         </div>
       </section>
@@ -139,13 +134,13 @@ export default function Home() {
           <p>Interested in my work or have questions?</p>
           <p>Feel free to reach out:</p>
           <p><strong>Email:</strong> <a href="mailto:contact@adelez.art">contact@adelez.art</a></p>
-          <p><strong>Instagram:</strong> <a href="https://instagram.com/adelez.art" target="_blank" rel="noopener noreferrer">@adelez.art</a></p>
+          <p></p>
         </div>
       </section>
 
       {/* Footer */}
       <footer className={styles.footer}>
-        <p>&copy; 2024 Adelez. All rights reserved.</p>
+        <p>&copy; 2026 Adelez</p>
       </footer>
 
       {/* Modal */}
