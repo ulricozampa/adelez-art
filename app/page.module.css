@@ -433,7 +433,9 @@
 }
 
 .sectionTitle {
-  margin: 6rem auto 4rem; /* top, horizontal auto-center, bottom */
-  max-width: 1200px; /* or whatever your content max-width is */
-  padding: 0 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem; /* Reduce this - try 2rem or 1.5rem */
+  text-align: center;
+  letter-spacing: 0.05em;
 }
