@@ -10,7 +10,7 @@ export default function Home() {
 
   const artworks = [
     {
-      title: 'Artwork Title 1',
+      title: 'My father',
       medium: 'Oil on Canvas',
       year: '2024',
       dimensions: '100 x 120 cm',
