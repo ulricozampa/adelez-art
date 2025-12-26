@@ -435,5 +435,7 @@
 .sectionTitle {
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 2rem; /* Offset from the left edge */
+  /* or use padding-left: 2rem; */
 }
