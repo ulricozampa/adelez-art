@@ -104,6 +104,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* People Section */}
+<section className={styles.peopleSection}>
+  <h2 className={styles.sectionTitle}>People</h2>
+</section>
+
+{/* Artworks Grid */}
+<section id="artworks" className={styles.artworks}></section>
       {/* Artworks Grid */}
       <section id="artworks" className={styles.artworks}>
         <div className={styles.artworksContainer}>
