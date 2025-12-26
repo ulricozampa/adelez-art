@@ -425,3 +425,15 @@
     height: 400px;
   }
 }
+
+.peopleSection {
+  margin: 6rem auto 4rem; /* top, horizontal auto-center, bottom */
+  max-width: 1200px; /* or whatever your content max-width is */
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
