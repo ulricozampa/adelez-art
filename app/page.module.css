@@ -436,6 +436,6 @@
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 2rem;
-  margin-left: 2rem; /* Offset from the left edge */
+  margin-left: 1rem; /* Offset from the left edge */
   /* or use padding-left: 2rem; */
 }
