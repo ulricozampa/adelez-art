@@ -433,9 +433,7 @@
 }
 
 .sectionTitle {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  margin-left: 1rem; /* Offset from the left edge */
-  /* or use padding-left: 2rem; */
+  margin: 6rem auto 4rem; /* top, horizontal auto-center, bottom */
+  max-width: 1200px; /* or whatever your content max-width is */
+  padding: 0 2rem;
 }
