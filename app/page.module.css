@@ -45,78 +45,99 @@
   color: #000;
 }
 
-/* Hero Slider */
-.heroSlider {
-  margin-top: 60px;
-  height: 80vh;
+/* ===== Slider ===== */
+.sliderWrapper {
   position: relative;
-  background: #fafafa;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  margin-top: 60px; /* header offset */
 }
 
-.slideContainer {
-  height: 100%;
+.sliderImageWrapper {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slide {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.slideImage {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  max-width: 1000px;
-}
-
-.imagePlaceholder {
+.sliderImageWrapper img,
+.sliderImageWrapper > div {
+  object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
-  font-size: 14px;
-  letter-spacing: 0.5px;
 }
 
-.navButton {
+.sliderInfo {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.sliderInfo h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.sliderInfo p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0 0;
+}
+
+/* Slider navigation dots */
+.sliderNav {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 5;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.activeDot {
+  background: white;
+}
+
+/* Left/Right arrows */
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 40px;
-  background: none;
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.4);
   border: none;
-  font-size: 48px;
-  color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
   cursor: pointer;
-  padding: 10px 20px;
-  transition: opacity 0.3s;
   z-index: 10;
+  transition: background 0.3s;
 }
 
-.navButton:hover {
-  opacity: 0.6;
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.navButtonRight {
-  left: auto;
-  right: 40px;
+.arrow.left {
+  left: 1rem;
 }
 
-.navButton span {
-  font-weight: 300;
+.arrow.right {
+  right: 1rem;
 }
 
-/* Artworks Grid */
+/* ===== Artworks Grid ===== */
 .artworks {
   padding: 80px 0;
   background: white;
@@ -151,19 +172,6 @@
   overflow: hidden;
 }
 
-.artworkImagePlaceholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
-  font-size: 14px;
-}
-
 .artworkDetails {
   margin-top: 15px;
 }
@@ -182,7 +190,7 @@
   margin: 0;
 }
 
-/* Sections */
+/* ===== Sections ===== */
 .sectionContainer {
   max-width: 800px;
   margin: 0 auto;
@@ -190,49 +198,11 @@
 }
 
 .sectionTitle {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  margin-bottom: 40px;
-  color: #000;
-  text-transform: uppercase;
-}
-
-/* Exhibitions */
-.exhibitions {
-  background: #fafafa;
-}
-
-.exhibitionsList {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.exhibitionItem {
-  display: flex;
-  gap: 40px;
-  padding: 20px 0;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.exhibitionYear {
-  font-size: 14px;
-  color: #666;
-  min-width: 60px;
-}
-
-.exhibitionDetails h3 {
-  font-size: 15px;
-  font-weight: 400;
-  margin: 0 0 5px 0;
-  color: #000;
-}
-
-.exhibitionDetails p {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 /* About */
@@ -242,6 +212,7 @@
 
 .aboutText {
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .aboutText p {
@@ -260,6 +231,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .contactInfo p {
@@ -292,72 +265,7 @@
   letter-spacing: 0.5px;
 }
 
-/* Modal */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.98);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.modalContent {
-  max-width: 90%;
-  max-height: 90%;
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  cursor: default;
-}
-
-.modalImage {
-  position: relative;
-  width: 700px;
-  height: 700px;
-  background: #f5f5f5;
-}
-
-.modalInfo {
-  max-width: 300px;
-}
-
-.modalInfo h2 {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0 0 15px 0;
-  color: #000;
-}
-
-.modalInfo p {
-  font-size: 14px;
-  color: #666;
-  margin: 5px 0;
-}
-
-.modalClose {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  background: none;
-  border: none;
-  font-size: 36px;
-  color: #999;
-  cursor: pointer;
-  padding: 10px;
-  transition: color 0.3s;
-}
-
-.modalClose:hover {
-  color: #000;
-}
-
-/* Mobile Responsive */
+/* ===== Mobile Responsive ===== */
 @media (max-width: 1024px) {
   .artworksGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -375,13 +283,24 @@
   .nav a {
     font-size: 13px;
   }
+
+  .sliderInfo h2 {
+    font-size: 1.6rem;
+  }
+  .sliderInfo p {
+    font-size: 1rem;
+  }
+  .arrow {
+    font-size: 2.5rem;
+    padding: 0.3rem 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
   .headerContainer {
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
+    flex-direction: row; /* Keep it horizontal */
+    justify-content: space-between; /* Logo left, hamburger right */
+    align-items: center;
   }
 
   .nav {
@@ -392,50 +311,77 @@
     grid-template-columns: 1fr;
   }
 
-  .slideImage {
-    width: 90%;
-    height: 70%;
+  .sliderWrapper {
+    height: 50vh;
   }
 
-  .navButton {
-    left: 10px;
-    font-size: 32px;
+  .sliderInfo h2 {
+    font-size: 1.4rem;
   }
-
-  .navButtonRight {
-    right: 10px;
+  .sliderInfo p {
+    font-size: 0.9rem;
+  }
+  .arrow {
+    font-size: 2rem;
+    padding: 0.2rem 0.5rem;
   }
 
   .sectionContainer {
     padding: 60px 20px;
   }
+}
 
-  .exhibitionItem {
+
+/* Hamburger button - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    border-bottom: 1px solid #e0e0e0;
   }
 
-  .modalContent {
-    flex-direction: column;
-    max-width: 95%;
+  .nav a {
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
   }
 
-  .modalImage {
-    width: 100%;
-    height: 400px;
+  /* Open nav */
+  .navOpen {
+    max-height: 500px; /* large enough to show all links */
   }
 }
 
-.peopleSection {
-  margin: 6rem auto 4rem; /* top, horizontal auto-center, bottom */
-  max-width: 1200px; /* or whatever your content max-width is */
-  padding: 0 2rem;
-}
-
-.sectionTitle {
-  font-size: 3rem; /* Keep text size the same */
-  font-weight: 700;
-  margin-bottom: 1rem; /* Make gap smaller - try 1rem or 0.5rem */
-  text-align: center;
-  letter-spacing: 0.05em;
-}

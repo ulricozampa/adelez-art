@@ -1,0 +1,111 @@
+.artworksWrapper {
+  padding: 2rem;
+  margin-top: 50pt;
+}
+
+.artworksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.artworkItem {
+  cursor: pointer;
+}
+
+.artworkImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.artworkImageWrapper img {
+  object-fit: cover;
+}
+
+.artworkDetails {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.artworkDetails h3 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.artworkDetails p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.categoryBlock {
+  margin-bottom: 4rem;
+}
+
+.categoryTitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.artworksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+
+.artworksWrapper {
+  padding: 2rem;
+}
+
+.categoryBlock {
+  margin-bottom: 4rem;
+}
+
+.categoryTitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ✅ 3 per riga */
+.artworksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .artworksGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .artworksGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.artworkItem {
+  text-decoration: none;
+  color: inherit;
+}
+
+.artworkImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.artworkDetails {
+  margin-top: 0.5rem;
+  text-align: center;
+}
