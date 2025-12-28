@@ -26,6 +26,8 @@ export default function Header() {
         <nav className={`${styles.nav} ${navOpen ? styles.navOpen : ''}`}>
           <a href="/artworks" onClick={() => setNavOpen(false)}>Artworks</a>
           <a href="/exhibitions" onClick={() => setNavOpen(false)}>Exhibitions</a>
+          <a href="/about" onClick={() => setNavOpen(false)}>About</a>
+          <a href='/contact' onClick={() => setNavOpen(false)}>Contact</a>
         </nav>
       </div>
     </header>
