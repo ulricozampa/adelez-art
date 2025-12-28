@@ -77,35 +77,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className={styles.about}>
-        <div className={styles.sectionContainer}>
-          <h2 className={styles.sectionTitle}>About</h2>
-          <div className={styles.aboutText}>
-            <p>
-              Through my work, I explore the intersection of color, emotion, and form, 
-              creating pieces that invite viewers to pause and reflect.
-            </p>
-            <p>
-              Each painting is a story, a moment captured in time, where technique meets 
-              passion. My work draws inspiration from nature, human connection, and the 
-              subtle beauty found in everyday moments.
-            </p>
-            <p><a href='https://www.artistcloseup.com/blog/interview-simona-zampa' style={{color: 'blue'}} target='_blank'>Discover more...</a></p>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className={styles.contact}>
-        <div className={styles.sectionContainer}>
-          <h2 className={styles.sectionTitle}>Contact</h2>
-          <div className={styles.contactInfo}>
-            <p><a href="mailto:simona@zampa.ch">simona@zampa.ch</a></p>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className={styles.footer}>
         <p>© 2026 Adelez</p>
