@@ -8,7 +8,7 @@ export const categories = [
         medium: "Oil on Canvas",
         year: "2022",
         dimensions: "100 x 120 cm",
-        image: "/images/artwork1.jpg",
+        image: "/images/artwork1.JPG",
         carousel: true
       },
       {
