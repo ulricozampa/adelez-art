@@ -114,7 +114,7 @@ export const categories = [
     ],
   },
   {
-    category: "Still Life",
+    category: "Still Lives",
     images: [
       {
         slug: "parrot",
@@ -298,7 +298,7 @@ export const categories = [
     ],
   },
   {
-    category: "Paper Folding",
+    category: "Paper Foldings",
     images: [],
   },
 ]
