@@ -62,7 +62,7 @@ export default function Home() {
       {/* Header */}
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <div className={styles.logo}>adelez</div>
+          <div className={styles.logo}>Adelez</div>
           <ul className={styles.navLinks}>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
