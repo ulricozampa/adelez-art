@@ -81,7 +81,7 @@ export const categories = [
       },
       {
         slug: "isabella-with-furry-hat",
-        title: "Isabella with Furry Har",
+        title: "Isabella with Furry Hat",
         medium: "Oil on Canvas",
         year: "2022",
         dimensions: "30 x 30 cm",
