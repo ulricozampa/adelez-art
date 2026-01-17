@@ -138,7 +138,7 @@ export const categories = [
         medium: "Oil on Canvas",
         year: "2022",
         dimensions: "40 x 50 cm",
-        image: "/images/still3.jpg",
+        image: "/images/still3.JPG",
       },
       {
         slug: "the-wild-garden",
@@ -146,7 +146,7 @@ export const categories = [
         medium: "Oil on Canvas",
         year: "2023",
         dimensions: "60 x 80 cm",
-        image: "/images/still4.jpg",
+        image: "/images/still4.JPG",
       },
       {
         slug: "philodendron",
@@ -162,7 +162,7 @@ export const categories = [
         medium: "Oil on Canvas",
         year: "2019",
         dimensions: "60 x 80 cm",
-        image: "/images/still6.jpg",
+        image: "/images/still6.JPG",
       },
 
     ],
@@ -232,7 +232,7 @@ export const categories = [
         medium: "Collage on paper",
         year: "2023",
         dimensions: "25 x 35 cm",
-        image: "/images/cutout8.jpg",
+        image: "/images/cutout8.JPG",
       },
       {
         slug: "cut-out-title-9",
