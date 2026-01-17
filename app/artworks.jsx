@@ -212,7 +212,7 @@ export const categories = [
       },
       {
         slug: "cut--title-6",
-        title: "Untitled",
+        title: "'Untitled'",
         medium: "Collage on paper",
         year: "20xx",
         dimensions: "xx x xx cm",
@@ -220,7 +220,7 @@ export const categories = [
       },
       {
         slug: "cut-out-title-7",
-        title: "Untitled",
+        title: "'Untitled'",
         medium: "Collage on paper",
         year: "20xx",
         dimensions: "xx x xx cm",
@@ -228,7 +228,7 @@ export const categories = [
       },
       {
         slug: "cut-out-title-8",
-        title: "Untitled",
+        title: "'Untitled'",
         medium: "Collage on paper",
         year: "20xx",
         dimensions: "xx x xx cm",
@@ -236,7 +236,7 @@ export const categories = [
       },
       {
         slug: "cut-out-title-9",
-        title: "Untitled",
+        title: "'Untitled'",
         medium: "Collage on paper",
         year: "20xx",
         dimensions: "xx x xx cm",
@@ -244,7 +244,7 @@ export const categories = [
       },
       {
         slug: "cut-out-title-10",
-        title: "Untitled",
+        title: "'Untitled'",
         medium: "Collage on paper",
         year: "20xx",
         dimensions: "xx x xx cm",
@@ -265,7 +265,7 @@ export const categories = [
     images: [
       {
         slug: "comic1",
-        title: "Comic 1",
+        title: "'Untitled'",
         medium: "Paper Cut-out",
         year: "2023",
         dimensions: "25 x 35 cm",
@@ -273,7 +273,7 @@ export const categories = [
       },
       {
         slug: "comic2",
-        title: "Comic 2",
+        title: "'Untitled'",
         medium: "Paper Cut-out",
         year: "2023",
         dimensions: "25 x 35 cm",
@@ -281,7 +281,7 @@ export const categories = [
       },
       {
         slug: "comic3",
-        title: "Comic 3",
+        title: "'Untitled'",
         medium: "Paper Cut-out",
         year: "2023",
         dimensions: "25 x 35 cm",
@@ -289,7 +289,7 @@ export const categories = [
       },
       {
         slug: "comic4",
-        title: "Comic 4",
+        title: "'Untitled'",
         medium: "Paper Cut-out",
         year: "2023",
         dimensions: "25 x 35 cm",
