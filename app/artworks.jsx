@@ -228,7 +228,7 @@ export const categories = [
       },
       {
         slug: "cut-out-title-8",
-        title: "'Untitled'",
+        title: "Open House 2025",
         medium: "Collage on paper",
         year: "20xx",
         dimensions: "xx x xx cm",
