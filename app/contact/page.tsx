@@ -7,7 +7,7 @@ export default function Contact() {
         <h2 className={styles.sectionTitle}>Contact</h2>
         
         <div className={styles.contactInfo}>
-          <p>simona[at]zampa.ch</p>
+          <p>simona@zampa.ch</p>
         </div>
       </div>
     </section>
